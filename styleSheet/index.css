@@ -63,6 +63,42 @@ img{vertical-align:top;border:none}
     background-size:100% 100%;
 
 }
+.midBody{
+    width: 1200px;
+    margin: 0 auto;
+}
+.midColBox{
+    width: 100%;
+}
+.midBody li{
+    float: left;
+    width: 23%;
+    margin-left: 2%;
+    position: relative;
+    overflow: hidden;
+
+
+}
+.midBody li img{
+    width: 100%;
+}
+.midBody li .colShadow{
+    position: absolute;
+    top: -100%;
+    bottom: 100%;
+    width: 100%;
+    background: black;
+    opacity: 0.5;
+    cursor: pointer;
+    transition:all 1s;
+    -moz-transition:all 1s; /* Firefox 4 */
+    -webkit-transition:all 1s; /* Safari and Chrome */
+    -o-transition:all 1s; /* Opera */
+}
+.midBody li:hover .colShadow{
+    top: 0;
+    bottom: 0;
+}
 @media screen and (max-width:1050px){
     .topCenter{
         height: auto;
