@@ -1,0 +1,31 @@
+/*清除样式*/
+*{margin:0;padding:0}
+
+li{list-style:none}
+
+img{vertical-align:top;border:none}
+
+.clear{clear: both;}
+/*背景*/
+.outsideBg{
+    background:#ffe6c9 url("../images/annualMeeting.png") no-repeat;
+    background-size:100% 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.indexTitle{
+    width: 1000px;
+    height: 120px;
+    line-height: 120px;
+    color: #ffe6c9;
+    font-size: 50px;
+    margin: 4% auto;
+    font-weight: normal;
+    text-align: center;
+    background: url("../images/annualMeetingTitle.png") no-repeat;
+    background-size:100% 100%;
+
+}
