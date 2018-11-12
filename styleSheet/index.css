@@ -16,6 +16,40 @@ img{vertical-align:top;border:none}
     right: 0;
     bottom: 0;
 }
+.topList{
+    background: #ffffff;
+    opacity: 0.8;
+}
+.topList img{
+    vertical-align:middle;
+}
+.topCenter{
+    /*margin:0 auto;*/
+    width: 85%;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+}
+.topCenter .topLeftList{
+    margin-left: 100px;
+}
+.topCenter .topLeftList>li{
+    float: left;
+    margin-right: 8%;
+}
+.topCenter .topLeftList>li:last-child{
+    margin-right: 0;
+}
+.topCenter .topRightList>li{
+    float: right;
+    margin-left: 2%;
+}
+.topListSm{
+    display: none;
+}
+.topListSm li{
+    text-align: center;
+}
 .indexTitle{
     width: 1000px;
     height: 120px;
@@ -28,4 +62,18 @@ img{vertical-align:top;border:none}
     background: url("../images/annualMeetingTitle.png") no-repeat;
     background-size:100% 100%;
 
+}
+@media screen and (max-width:1050px){
+    .topCenter{
+        height: auto;
+        width: 100%;
+    }
+}
+@media screen and (max-width:863px){
+    .topList{
+       display: none;
+    }
+    .topListSm{
+        display: block;
+    }
 }
