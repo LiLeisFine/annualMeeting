@@ -16,6 +16,7 @@ img{vertical-align:top;border:none}
     right: 0;
     bottom: 0;
 }
+/*头部列表*/
 .topList{
     background: #ffffff;
     opacity: 0.8;
@@ -24,7 +25,6 @@ img{vertical-align:top;border:none}
     vertical-align:middle;
 }
 .topCenter{
-    /*margin:0 auto;*/
     width: 85%;
     height: 50px;
     line-height: 50px;
@@ -50,8 +50,9 @@ img{vertical-align:top;border:none}
 .topListSm li{
     text-align: center;
 }
+/*标题*/
 .indexTitle{
-    width: 1000px;
+    width: 50%;
     height: 120px;
     line-height: 120px;
     color: #ffe6c9;
@@ -63,46 +64,107 @@ img{vertical-align:top;border:none}
     background-size:100% 100%;
 
 }
+/*展示内容*/
 .midBody{
-    width: 1200px;
+    width: 60%;
     margin: 0 auto;
+    position: relative;
 }
 .midColBox{
     width: 100%;
+    position: relative;
 }
-.midBody li{
-    float: left;
+.midBody .midColBox li{
     width: 23%;
-    margin-left: 2%;
+    position: absolute;
+}
+.midBody .midColBox li:nth-child(1){
+    left: 0;
+}
+.midBody .midColBox li:nth-child(2){
+    left: 25%;
+}
+.midBody .midColBox li:nth-child(3){
+    left: 50%;
+}
+.midBody .midColBox li:nth-child(4){
+    left: 75%;
+}
+.midBody .midColBox li>div{
+    width: 100%;
     position: relative;
     overflow: hidden;
-
-
+    border-radius: 5px;
 }
-.midBody li img{
+.midBody .midColBox li img{
     width: 100%;
 }
-.midBody li .colShadow{
+.midBody .midColBox li .colShadow{
+    background: black;
+    opacity: 0.5;
+}
+.midBody .midColBox li .colHoverText,.midBody .midColBox li .colShadow{
+    border-radius: 5px;
     position: absolute;
     top: -100%;
     bottom: 100%;
     width: 100%;
-    background: black;
-    opacity: 0.5;
     cursor: pointer;
-    transition:all 1s;
-    -moz-transition:all 1s; /* Firefox 4 */
-    -webkit-transition:all 1s; /* Safari and Chrome */
-    -o-transition:all 1s; /* Opera */
+    transition:all .5s linear;
+    -moz-transition:all .5s linear; /* Firefox 4 */
+    -webkit-transition:all .5s linear; /* Safari and Chrome */
+    -o-transition:all .5s linear; /* Opera */
 }
-.midBody li:hover .colShadow{
+.midBody .midColBox li:hover .colShadow,.midBody .midColBox li:hover .colHoverText{
     top: 0;
     bottom: 0;
 }
-@media screen and (max-width:1050px){
+.midBody .midColBox li .colHoverText p{
+    margin-top: 50%;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+}
+.midProductList{
+    position: absolute;
+    right: 0;
+    width: 70%;
+}
+.midProductList>li{
+    position: relative;
+}
+.midProductList>li>img{
+    width: 100%;
+}
+.midProductList>li .midProLeft,.midProductList>li .midProRight{
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+}
+.midProductList>li .midProLeft{
+    left: 5%;
+    width: 30%;
+}
+.midProductList>li .midProLeft img{
+    width: 100%;
+    height: 100%;
+}
+.midProductList>li .midProRight{
+    width: 60%;
+    left: 40%;
+}
+
+@media screen and (max-width:1070px){
     .topCenter{
         height: auto;
         width: 100%;
+    }
+    .midBody li .colHoverText,.midBody li .colShadow{
+        display: none;
+    }
+    .midBody li:hover .colShadow,.midBody li:hover .colHoverText{
+        display: block;
     }
 }
 @media screen and (max-width:863px){
