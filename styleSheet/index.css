@@ -104,7 +104,7 @@ img{vertical-align:top;border:none}
 }
 .midBody .midColBox li .colShadow{
     background: black;
-    opacity: 0.5;
+    opacity: 0.7;
 }
 .midBody .midColBox li .colHoverText,.midBody .midColBox li .colShadow{
     border-radius: 5px;
@@ -123,7 +123,7 @@ img{vertical-align:top;border:none}
     bottom: 0;
 }
 .midBody .midColBox li .colHoverText p{
-    margin-top: 50%;
+    margin-top: 200px;
     color: #fff;
     text-align: center;
     font-size: 18px;
