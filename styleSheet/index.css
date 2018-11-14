@@ -19,7 +19,7 @@ img{vertical-align:top;border:none}
 /*头部列表*/
 .topList{
     background: #ffffff;
-    opacity: 0.8;
+    opacity: 0.95;
 }
 .topList img{
     vertical-align:middle;
@@ -57,7 +57,7 @@ img{vertical-align:top;border:none}
     line-height: 120px;
     color: #ffe6c9;
     font-size: 50px;
-    margin: 4% auto;
+    margin: 2.5% auto;
     font-weight: normal;
     text-align: center;
     background: url("../images/annualMeetingTitle.png") no-repeat;
@@ -66,29 +66,32 @@ img{vertical-align:top;border:none}
 }
 /*展示内容*/
 .midBody{
-    width: 60%;
+    width: 1190px;
     margin: 0 auto;
     position: relative;
+    height: 641px;
 }
 .midColBox{
     width: 100%;
     position: relative;
+    height: 100%;
 }
 .midBody .midColBox li{
-    width: 23%;
+    width: 290px;
     position: absolute;
+    cursor: pointer;
 }
 .midBody .midColBox li:nth-child(1){
     left: 0;
 }
 .midBody .midColBox li:nth-child(2){
-    left: 25%;
+    left: 300px;
 }
 .midBody .midColBox li:nth-child(3){
-    left: 50%;
+    left: 600px;
 }
 .midBody .midColBox li:nth-child(4){
-    left: 75%;
+    left: 900px;
 }
 .midBody .midColBox li>div{
     width: 100%;
@@ -128,31 +131,101 @@ img{vertical-align:top;border:none}
 }
 .midProductList{
     position: absolute;
+    top: 0;
     right: 0;
     width: 70%;
+    display: none;
 }
 .midProductList>li{
     position: relative;
+    width: 819px;
+    height: 200px;
+    background: url("../images/amProductBg.png")no-repeat;
 }
-.midProductList>li>img{
-    width: 100%;
+.midProductList>li:hover{
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.34) ;
 }
 .midProductList>li .midProLeft,.midProductList>li .midProRight{
-    position: absolute;
-    top: 10%;
-    bottom: 10%;
+    height: 100%;
+    padding:30px  0 30px 40px;
+    box-sizing: border-box;
 }
 .midProductList>li .midProLeft{
-    left: 5%;
+    float: left;
     width: 30%;
 }
 .midProductList>li .midProLeft img{
     width: 100%;
     height: 100%;
+    border: 1px solid #b8291a;
 }
 .midProductList>li .midProRight{
-    width: 60%;
+    width: 50%;
     left: 40%;
+    overflow: hidden;
+}
+.midProRight h3{
+    color: #b8291a;
+    font-size: 16px;
+    font-weight: normal;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display:-webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient: vertical;
+}
+.midProRight p{
+    font-size: 14px;
+    margin-top: 20px;
+}
+.midProRight p span,.midProRight p label{
+    display: inline-block;
+    padding-left: 26px;
+    height: 26px;
+    line-height: 26px;
+}
+.midProRight p span{
+    background: url("../images/amCoordinates.png") no-repeat;
+}
+.midProRight p label{
+    background: url("../images/amTime.png") no-repeat;
+    margin-left: 20%;
+}
+.midProRight h4{
+    color: #b8291a;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.midProRight h4 label{
+    color: #000;
+    font-size: 14px;
+}
+.midProRight h4 button{
+    margin-left: 20%;
+    border:none;
+    background: url("../images/amButton.png")no-repeat;
+    width: 90px;
+    height: 25px;
+    color: #fef9e3;
+}
+.btnStyle{
+    padding:5px 8px;
+    background: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.closeBtn{
+    position: absolute;
+    top: -32px;
+    right: 0;
+    border: 1px solid #f9dabf;
+    color:#f9dabf;
+}
+.moreBtn{
+    float: right;
+    margin-top: 20px;
+    border: 1px solid #a32d2d;
+    color:#a32d2d;
 }
 
 @media screen and (max-width:1070px){
