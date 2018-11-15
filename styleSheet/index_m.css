@@ -1,0 +1,19 @@
+/*清除样式*/
+*{margin:0;padding:0;}
+
+li{list-style:none}
+
+img{vertical-align:top;border:none}
+
+.clear{clear: both;}
+
+/*背景*/
+.outsideBody_m{
+    width: 100%;
+    background:#ffe6c9 url("../images/amBottomBg_m.png") no-repeat bottom;
+    background-size: 100%;
+    padding-bottom: 10rem;
+}
+.topImg img{
+    width: 100%;
+}
