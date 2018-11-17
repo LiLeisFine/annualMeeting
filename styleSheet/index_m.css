@@ -17,3 +17,13 @@ img{vertical-align:top;border:none}
 .topImg img{
     width: 100%;
 }
+.midContent{
+    width: 15rem;
+    margin: 0 auto;
+}
+.midColBox>li{
+    border-radius:1rem;
+}
+.midColBox>li>img{
+    width: 15rem;
+}
